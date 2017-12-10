@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  // 求1到100相加的和
+    var sum=0;
+    for(i=0; i<=100; i++){
+        sum=sum+i;
+    }
+    console.log(sum)
+
+//  1.求1~10以内所有数的乘积
+   var cheng=1;
+   for(var i=1;i<=10;i++){
+    cheng=cheng*i;
+   }
+   console.log(cheng)
+
+//  2.求1~100以内3的倍数之和。
+   var a=0;
+   for(var i=1;i<=100;i++){
+    if(i%3==0)
+    a=a+i;
+   }
+   console.log(a)
+
+
+//  3.求1~100以内不能被7整除的数之和。
+   var b=0;
+   for(var i=1;i<=100;i++){
+    if(i%7!=0)
+    b=b+i;
+   }
+   console.log(b)
+
+
+//  4.求1~100以内所有偶数之和。
+    var c=0;
+   for(var i=1;i<=100;i++){
+    if(i%2==0)
+    c=c+i;
+   }
+   console.log(c)
+
+
+// 5.求1~100以内所有的偶数和所有的奇数之和。
+   var d=0,e=0;
+   for(var i=1;i<=100;i++){
+    if(i%2==0){
+      d=d+i
+    }else{
+    e+=i;
+   }
+ }
+   console.log("偶数和为："+d+"奇数和为："+e)
+
+
+ //  6.打印矩形
+   for(var i=0;i<=5;i++){
+    for(var j=0;j<=8;j++){
+      document.write("@")
+    }
+    document.write("<br>")
+   }
+    document.write("<br>")
+
+ 
+ //  7.打印三角形
+    for(var i=0;i<=8;i++){
+    for(var j=0;j<=i;j++){
+      document.write("@")
+    }
+    document.write("<br>")
+   }
+    document.write("<br>")
+
+    for(var i=8;i>=0;i--){
+    for(var j=0;j<=i;j++){
+      document.write("@")
+    }
+    document.write("<br>")
+   }
+    document.write("<br>")
+ 
+
+ //  8.打印九九乘法表。
+    document.write("<table>")
+    for(var i=1;i<10;i++){
+    document.write("<tr>")
+      for(var j=1;j<=i;j++){
+    document.write("<td>")
+       document.write(j+"*"+i+"="+i*j)
+    document.write("<td>")
+      }
+    document.write("<tr>")
+    }
+    document.write("</table>")
+
+  //  9.本金10000元存入银行，年利率是千分之三，每过1年，将本金和利息加作为新的本金。计算5年后，获得的本金是多少
+    var ben=10000;
+    var rate=0.003;
+    for(var i =1;i<=5;i++){
+      ben=ben*(1+0.003)
+    }
+    console.log(ben);
+
+  //  10.斐波那契数列指的是这样的一个数列：0、1、1、2、3、5、8、13、21... ... 即第n个数是前面两个数之和。求，当n=12时，对应的值。
+
+   var x=0;
+   var m=1;
+   var n=1;
+   for(var i=3;i<=8;i++){
+      x=m+n;
+      m=n;
+      n=x;
+
+   }
+console.log(x)
+
+  </script>
+</body>
+</html>

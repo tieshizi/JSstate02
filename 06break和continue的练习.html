@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//  1.求1~100之间不能被7整除的数之和
+var a=0;
+for(var i=0; i<=100;i++){
+  if(i%7==0){
+    continue;
+  }
+    a=a+i;
+
+}
+console.log(a);
+//  2.求200~300之间，所有奇数之和
+var b=0;
+for(var i=200; i<=300;i++){
+  if(i%2==0){
+    continue;
+  }
+    b=b+i;
+  
+}
+console.log(b);
+
+//  3.求200~300之间，第一个能被7整除的数。
+
+for(var i=200; i<=300;i++){
+  if(i%7==0){
+    break;
+  }    
+  
+}
+console.log(i);
+
+//  4.所有能被7整除的数
+
+for(var i=200; i<=300;i++){
+  if(i%7==0){
+     console.log(i);
+      }
+   }
+  </script>
+</body>
+</html>

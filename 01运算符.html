@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  // 赋值运算
+     var a=3;
+     a+=2;
+     console.log(a);
+
+
+
+  // 自增自减运算
+     var b=1;
+     c=++b + b++ + b++ + ++b + b++ + --b;
+     console.log(c);
+
+
+// 逻辑运算取值
+console.log(0||"你好"||222||"")
+console.log(0||undefined||222||"")
+console.log(0&&"你好"&&222&&"")
+console.log(6&&"你好"&&222&&"hello")
+console.log(6 && "你好" || 222 && "hello")
+
+var f = 6 && "你好" || 222 && "hello";
+console.log("f="+f)
+   
+
+   var num1=prompt("请输入一个数");
+   var num2=prompt("请输入一个数");
+   max=num1>num2?num1:num2;
+   document.write(max)
+  </script> 
+</body>
+</html>
